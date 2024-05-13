@@ -1,30 +1,21 @@
-# React + TypeScript + Vite
+# React 19 Example
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 학습 목표
 
-Currently, two official plugins are available:
+### React 19에서 새로 추가된 기기능을 학습
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- [] useActionState
+- [] useFormStatus
+- [] useOptimistic
+- [] use
+- [] 서버 컴포넌트
+- [] ref와 ref 클린업
+- [] 프로바이더가된 Context
+- [] useDefferredValue 초기값
+- [] 문서 메타데이터 지원
+- [] 스타일시트 지원 (외부 스타일 스트리밍 가능)
+- [] 비동기 스크립트 지원
+- [] 리소스 프리로딩 지원
+- [] 서드파티 스크립트와 확장 프로그램 호환성
+- [] 에러보고의 개선
+- [] 사용자 정의 요소 지원 (Custom Element)
