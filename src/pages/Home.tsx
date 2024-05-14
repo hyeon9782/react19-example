@@ -7,6 +7,8 @@ import Articles from "../components/Articles";
 import { getGlobal } from "../server";
 import Article from "../components/Article";
 import BootstrapButton from "../components/BootstrapButton";
+import UserProvider from "../context/UserContext";
+import Header from "../components/Header";
 
 const article = {
   title: "제목 1",
@@ -17,17 +19,20 @@ const article = {
 const Home = () => {
   getGlobal();
   return (
-    <div>
-      <LoginForm />
-      <UserForm />
-      <Form />
-      <Suspense fallback={<div>Loading...</div>}>
-        <Comments />
-      </Suspense>
-      <Article article={article} />
-      <BootstrapButton />
-      {/* <Articles /> */}
-    </div>
+    <UserProvider>
+      <div>
+        <Header />
+        <LoginForm />
+        <UserForm />
+        <Form />
+        <Suspense fallback={<div>Loading...</div>}>
+          <Comments />
+        </Suspense>
+        <Article article={article} />
+        <BootstrapButton />
+        {/* <Articles /> */}
+      </div>
+    </UserProvider>
   );
 };
 
