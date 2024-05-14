@@ -33,4 +33,17 @@ const getComments = (): Promise<string[]> => {
   });
 };
 
-export { login, update, getComments };
+const getArticles = (): Promise<string[]> => {
+  return new Promise((resovle) => {
+    setTimeout(() => {
+      resovle([
+        "안녕하세요. 게시글이에요",
+        "반가워요. 게시글이요",
+        "잘있어요. 게시글이이요",
+        "다시만나요. 게시글이에요",
+      ]);
+    }, 2000);
+  });
+};
+
+export { login, update, getComments, getArticles };

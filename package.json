@@ -28,5 +28,17 @@
   "overrides": {
     "@types/react": "npm:types-react@beta",
     "@types/react-dom": "npm:types-react-dom@beta"
+  },
+  "exports": {
+    ".": {
+      "react-server": {
+        "browser": "./debugger-polyfill.server.js",
+        "node": "./native-impl.server.js"
+      },
+      "default": {
+        "browser": "./browser-impl.client.js",
+        "node": "./node-polyfill.client.js"
+      }
+    }
   }
 }

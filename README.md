@@ -4,10 +4,10 @@
 
 ### React 19에서 새로 추가된 기기능을 학습
 
-- [] useActionState
-- [] useFormStatus
-- [] useOptimistic
-- [] use
+- [x] useActionState
+- [x] useFormStatus
+- [x] useOptimistic
+- [x] use
 - [] 서버 컴포넌트
 - [] ref와 ref 클린업
 - [] 프로바이더가된 Context
