@@ -6,6 +6,7 @@ import UserForm from "../components/UserForm";
 import Articles from "../components/Articles";
 import { getGlobal } from "../server";
 import Article from "../components/Article";
+import BootstrapButton from "../components/BootstrapButton";
 
 const article = {
   title: "제목 1",
@@ -24,6 +25,7 @@ const Home = () => {
         <Comments />
       </Suspense>
       <Article article={article} />
+      <BootstrapButton />
       {/* <Articles /> */}
     </div>
   );
